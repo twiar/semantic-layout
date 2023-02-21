@@ -1,4 +1,3 @@
-import { resolve } from 'path'
 import { defineConfig } from "vite";
 import { ViteAliases } from "vite-aliases";
 import legacy from "@vitejs/plugin-legacy";
@@ -15,7 +14,7 @@ pages.forEach((page => {
 export default defineConfig({
     build: {
         target: 'es2017',
-        outDir: 'build',
+        outDir: 'dist',
         rollupOptions: {
             input: {
                 ...pagesInput
